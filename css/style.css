@@ -1,6 +1,78 @@
-*{
-    font-family: 'Nunito Sans', sans-serif;
+/*:root: equivale a toda a estrutura do elemento HTML, é parecida com a tag HTML com diferença que a especificidade do root é maior*/
+:root {
+    --background-blue-Dark: #122ab2;
+    --background-blue-Bright: #2c70ff;
+    --background-Gray-Soft: #f7f7f7;
+    --row-purple: #ae81ff;
+    --row-Pink: #f9265e;
+    --row-Blue: #66d9eb;
+    --color-Gray-Soft: #a4a4a4;
+    --Color-Gray-Strong: #7c7c7c;
+    --color-black-bright: #222222;
 }
-:root{
-    
+
+/*Gerais - Reset*/
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Background-Gray-Soft);
+}
+
+.superinfo-bg {
+    background-color: var(--background-blue-Dark);
+    color: #fff;
+
+}
+
+.superinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.superinfo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bg {
+    background-color: var(--background-blue-Bright);
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*alinha o elemento na vertical*/
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;
+}
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu-nav a{
+    font-size: 1.25em;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+.menu-nav a:hover{
+    color: var(--background-blue-Dark);
 }
